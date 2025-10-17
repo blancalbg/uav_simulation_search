@@ -1,5 +1,5 @@
 # UAV Search Simulation – Operational Analysis Example
-# WHAT THE FUCK
+
 ## Project Overview
 
 This project simulates a multi-UAV search mission in a defined area. UAVs follow a lawnmower search pattern and attempt probabilistic detection of randomly placed targets. The simulation evaluates key operational metrics and measures of effectiveness:
@@ -14,10 +14,11 @@ The project produces statistical plots and a 3D animation of UAV paths.
 
 ## Project Structure
 
+```bash
 uav_simulation.py # Main simulation script
 results/ # Folder for generated CSV data and plots
 README.md # Project description and usage
-
+```
 ---
 
 ## How to Run
@@ -38,17 +39,18 @@ pip install -r requirements.txt
 ```bash
 python uav_simulation.py
 ```
+---
 
-After running, the ```bash results/ ```folder will contain:
-- datafarm_results.csv – simulation results for all runs
+After running, the ```results/ ```folder will contain:
+- ```datafarm_results.csv``` – simulation results for all runs
 
-- detection_prob_vs_n_uavs.png – detection probability plot
+- ```detection_prob_vs_n_uavs.png``` – detection probability plot
 
-- coverage_vs_n_uavs.png – coverage fraction plot
+- ```coverage_vs_n_uavs.png``` – coverage fraction plot
 
-- detection_time_boxplot.png – detection time distribution plot
+- ```detection_time_boxplot.png``` – detection time distribution plot
 
-- uav_3d_animation.gif – 3D UAV paths animation
+- ```uav_3d_animation.gif``` – 3D UAV paths animation
 
 ## Simulation Parameters
 
@@ -72,17 +74,17 @@ Parameters can be modified directly in `uav_simulation.py` or via the `experimen
 ### Plots and Measures of Effectiveness summary
 
 - **Detection Probability vs Number of UAVs**  
-  ![Detection Probability](results/detection_prob_vs_n_uavs.png)
+  ![Detection Probability](results/MoE_detection_prob_vs_n_uavs.png)
 
 - **Coverage Fraction vs Number of UAVs**  
-  ![Coverage Fraction](results/coverage_vs_n_uavs.png)
+  ![Coverage Fraction](results/MoE_coverage_vs_n_uavs.png)
 
 - **Detection Time Distribution**  
-  ![Detection Time](results/detection_time_boxplot.png)
+  ![Detection Time](results/MoE_detection_time_boxplot.png)
 
 
 ## 3D Animation
-uav_3d_animation.gif shows UAV paths over the mission area. Each UAV moves along a lawnmower pattern; the animation shows movement over time.
+```uav_3d_animation.gif``` shows UAV paths over the mission area. Each UAV moves along a lawnmower pattern; the animation shows movement over time.
 
 ## Example Metrics Table
 
