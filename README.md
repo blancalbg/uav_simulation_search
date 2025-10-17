@@ -112,3 +112,5 @@ Parameters can be modified directly in `uav_simulation.py` or via the `experimen
 
 ## 3D Animation
 `uav_3d_animation.gif` shows UAV paths over the mission area. Each UAV moves along a lawnmower pattern; the animation shows movement over time.
+
+![3D plot](3d_figure.png)
