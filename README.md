@@ -1,6 +1,6 @@
 # Small-Scale UAV Search Simulation
 
-## Project Overview
+## Project overview
 
 This project simulates a multi-UAV search mission in a defined area. UAVs follow a lawnmower search pattern and attempt probabilistic detection of randomly placed targets. The simulation evaluates key operational metrics and measures of effectiveness:
 
@@ -12,7 +12,7 @@ The project produces statistical plots and a 3D animation of UAV paths.
 
 ---
 
-## Project Structure
+## Project structure
 
 ```bash
 uav_simulation.py # Main simulation script
@@ -61,13 +61,13 @@ After running, the ```results/ ```folder will contain:
 
 ---
 
-## Simulation Logic
+## Simulation logic
 - UAVs follow a lawnmower search pattern across the mission area.
 - Targets are randomly placed and detected probabilistically within UAV sensor range.
 - Metrics such as Detection Probability, Coverage Fraction, and Average Detection Time are calculated for each simulation run.
 - Data farming (multiple simulation runs) is used to produce statistical distributions and confidence intervals.
 
-## Simulation Parameters
+## Simulation parameters
 
 | Parameter        | Value       |
 |-----------------|------------|
@@ -98,7 +98,7 @@ Parameters can be modified directly in `uav_simulation.py` or via the `experimen
   ![Detection Time](results/MoE_detection_time_boxplot.png)
 
 
-## Example Metrics Table
+## Example metrics table
 
 | n_uavs | Detection_Prob | Coverage_Fraction | Avg_Detect_Time (s) | Std_Detect_Time (s) |
 |--------|----------------|-----------------|-------------------|-------------------|
@@ -110,7 +110,7 @@ Parameters can be modified directly in `uav_simulation.py` or via the `experimen
 | 8      | 0.93           | 0.89            | 278.2             | 70.0              |
 
 
-## 3D Animation
+## UAV paths 3D animation
 `uav_3d_animation.gif` shows UAV paths over the mission area. Each UAV moves along a lawnmower pattern; the animation shows movement over time.
 
 ![3D plot](3d_figure.png)
