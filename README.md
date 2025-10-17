@@ -1,5 +1,5 @@
 # UAV Search Simulation – Operational Analysis Example
-
+# WHAT THE FUCK
 ## Project Overview
 
 This project simulates a multi-UAV search mission in a defined area. UAVs follow a lawnmower search pattern and attempt probabilistic detection of randomly placed targets. The simulation evaluates key operational metrics and measures of effectiveness:
