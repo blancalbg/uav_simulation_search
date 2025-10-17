@@ -1,4 +1,4 @@
-# UAV Search Simulation – Operational Analysis Example
+# Small-Scale UAV Search Simulation
 
 ## Project Overview
 
