@@ -98,9 +98,6 @@ Parameters can be modified directly in `uav_simulation.py` or via the `experimen
   ![Detection Time](results/MoE_detection_time_boxplot.png)
 
 
-## 3D Animation
-`uav_3d_animation.gif` shows UAV paths over the mission area. Each UAV moves along a lawnmower pattern; the animation shows movement over time.
-
 ## Example Metrics Table
 
 | n_uavs | Detection_Prob | Coverage_Fraction | Avg_Detect_Time (s) | Std_Detect_Time (s) |
@@ -111,3 +108,7 @@ Parameters can be modified directly in `uav_simulation.py` or via the `experimen
 | 4      | 0.42           | 0.53            | 300.7             | 79.3              |
 | 6      | 0.91           | 0.87            | 344.8             | 84.4              |
 | 8      | 0.93           | 0.89            | 278.2             | 70.0              |
+
+
+## 3D Animation
+`uav_3d_animation.gif` shows UAV paths over the mission area. Each UAV moves along a lawnmower pattern; the animation shows movement over time.
