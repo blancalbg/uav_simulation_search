@@ -19,6 +19,14 @@ uav_simulation.py # Main simulation script
 results/ # Folder for generated CSV data and plots
 README.md # Project description and usage
 ```
+
+## Dependencies
+- Python 3.8+
+- numpy
+- pandas
+- matplotlib
+- seaborn
+
 ---
 
 ## How to Run
@@ -39,7 +47,6 @@ pip install -r requirements.txt
 ```bash
 python uav_simulation.py
 ```
----
 
 After running, the ```results/ ```folder will contain:
 - ```datafarm_results.csv``` – simulation results for all runs
@@ -51,6 +58,14 @@ After running, the ```results/ ```folder will contain:
 - ```detection_time_boxplot.png``` – detection time distribution plot
 
 - ```uav_3d_animation.gif``` – 3D UAV paths animation
+
+---
+
+## Simulation Logic
+- UAVs follow a lawnmower search pattern across the mission area.
+- Targets are randomly placed and detected probabilistically within UAV sensor range.
+- Metrics such as Detection Probability, Coverage Fraction, and Average Detection Time are calculated for each simulation run.
+- Data farming (multiple simulation runs) is used to produce statistical distributions and confidence intervals.
 
 ## Simulation Parameters
 
@@ -84,7 +99,7 @@ Parameters can be modified directly in `uav_simulation.py` or via the `experimen
 
 
 ## 3D Animation
-```uav_3d_animation.gif``` shows UAV paths over the mission area. Each UAV moves along a lawnmower pattern; the animation shows movement over time.
+`uav_3d_animation.gif` shows UAV paths over the mission area. Each UAV moves along a lawnmower pattern; the animation shows movement over time.
 
 ## Example Metrics Table
 
